@@ -16,9 +16,7 @@ class AutoCompleteActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_auto_complete)
-
         autoComplete = findViewById(R.id.autoComplete)
-
         // For autocomplete textview
         val autocompleteAdapter = ArrayAdapter(
             this,
@@ -26,7 +24,7 @@ class AutoCompleteActivity : AppCompatActivity() {
             languages
         )
         autoComplete.setAdapter(autocompleteAdapter)
-        autoComplete.threshold = 1
+        autoComplete.threshold =1
     }
 }
 

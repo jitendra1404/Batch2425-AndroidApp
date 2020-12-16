@@ -7,21 +7,19 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 
 class AlertActivity : AppCompatActivity() {
-
-
+    private lateinit var button: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_alert)
 
-        val button: Button = findViewById(R.id.button)
-
+        button  = findViewById(R.id.button)
         button.setOnClickListener {
             val builder = AlertDialog.Builder(this)
             //set title for alert dialog
             builder.setTitle("My Alert")
             //set message for alert dialog
             builder.setMessage("Are you sure ?")
-            builder.setIcon(android.R.drawable.ic_input_add)
+            builder.setIcon(android.R.drawable.ic_delete)
             //performing positive action
             builder.setPositiveButton("Yes") { _,_ ->
                 Toast.makeText(this@AlertActivity, "clicked yes", Toast.LENGTH_LONG).show()
@@ -40,7 +38,7 @@ class AlertActivity : AppCompatActivity() {
             }
             // Create the AlertDialog
             val alertDialog: AlertDialog = builder.create()
-            alertDialog.setCancelable(true)
+            alertDialog.setCancelable(false)
             alertDialog.show()
         }
     }

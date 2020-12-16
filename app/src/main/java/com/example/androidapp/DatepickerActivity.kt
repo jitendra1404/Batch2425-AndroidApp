@@ -1,12 +1,10 @@
 package com.example.androidapp
 
-import android.annotation.SuppressLint
 import android.app.DatePickerDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
-import android.widget.Toast
 import java.util.*
 
 class DatepickerActivity : AppCompatActivity() {
@@ -37,11 +35,10 @@ class DatepickerActivity : AppCompatActivity() {
                 tvDate.text =
                     "$dayOfMonth-${monthOfYear + 1}-$yearNew (dd-mm-yyyy)"
             },
-            year-20,
+            year,
             month,
             day
         ).show()
-
     }
 }
 
