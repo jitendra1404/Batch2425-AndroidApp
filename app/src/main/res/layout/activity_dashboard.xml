@@ -5,7 +5,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DashboardActivity">
+    tools:context=".classactivities.DashboardActivity">
+
+    <Button
+        android:id="@+id/btnSpinner"
+        android:layout_width="146dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="60dp"
+        android:text="Spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnListView" />
+
+    <Button
+        android:id="@+id/btnAutocomplete"
+        android:layout_width="146dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:text="Autocomplete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.629"
+        app:layout_constraintStart_toEndOf="@+id/btnAlertDialog"
+        app:layout_constraintTop_toBottomOf="@+id/btnCountries" />
+
+    <Button
+        android:id="@+id/btnListView"
+        android:layout_width="146dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="48dp"
+        android:text="ListView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlertDialog" />
+
+    <Button
+        android:id="@+id/btnCountries"
+        android:layout_width="146dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:text="Countries"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.629"
+        app:layout_constraintStart_toEndOf="@+id/btnAlertDialog"
+        app:layout_constraintTop_toBottomOf="@+id/btnUserProfile" />
 
     <Button
         android:id="@+id/btnDatePicker"
@@ -17,17 +65,6 @@
         android:text="Date Picker"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnAlertDialog"
-        android:layout_width="146dp"
-        android:layout_height="85dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="56dp"
-        android:text="Alert Dialog"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnDatePicker" />
 
     <Button
         android:id="@+id/btnTimePicker"
@@ -51,6 +88,18 @@
         android:layout_marginRight="44dp"
         android:text="user Profile"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.629"
         app:layout_constraintStart_toEndOf="@+id/btnAlertDialog"
         app:layout_constraintTop_toBottomOf="@+id/btnTimePicker" />
+
+    <Button
+        android:id="@+id/btnAlertDialog"
+        android:layout_width="146dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="56dp"
+        android:text="Alert Dialog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDatePicker" />
 </androidx.constraintlayout.widget.ConstraintLayout>

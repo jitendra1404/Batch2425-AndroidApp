@@ -1,9 +1,10 @@
-package com.example.androidapp
+package com.example.androidapp.classactivities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
+import com.example.androidapp.R
 
 class SpinnerActivity : AppCompatActivity() {
 
@@ -27,7 +28,6 @@ class SpinnerActivity : AppCompatActivity() {
         spinner.adapter = adapter
         // On item selected listener on spinner
         spinner.onItemSelectedListener =
-
             object : AdapterView.OnItemSelectedListener {
                 override fun onItemSelected(
                     parent: AdapterView<*>?,

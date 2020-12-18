@@ -1,20 +1,19 @@
-package com.example.androidapp
+package com.example.androidapp.classactivities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.ListView
 import android.widget.Toast
+import com.example.androidapp.R
 
 class ListviewActivity : AppCompatActivity() {
     private val countries = arrayOf(
-        "Nepal","India","China"
-    )
-    private lateinit var lstView : ListView
+        "Nepal", "India", "China")
+    private lateinit var lstView: ListView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_listview)
-
         lstView = findViewById(R.id.listView)
         val adapter = ArrayAdapter(
             this,
@@ -22,11 +21,10 @@ class ListviewActivity : AppCompatActivity() {
             countries
         )
         lstView.adapter = adapter
-
-        // Clicklistener
+        // On item Click listener
         lstView.setOnItemClickListener { parent, view, position, id ->
-            val element = parent.getItemAtPosition(position)
-            Toast.makeText(this, "$element", Toast.LENGTH_SHORT).show()
+            val country = parent.getItemAtPosition(position).toString()
+            Toast.makeText(this, country, Toast.LENGTH_SHORT).show()
         }
     }
 }

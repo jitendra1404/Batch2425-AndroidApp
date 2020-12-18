@@ -1,9 +1,10 @@
-package com.example.androidapp
+package com.example.androidapp.classactivities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
+import com.example.androidapp.R
 
 class AutoCompleteActivity : AppCompatActivity() {
 
@@ -24,7 +25,7 @@ class AutoCompleteActivity : AppCompatActivity() {
             languages
         )
         autoComplete.setAdapter(autocompleteAdapter)
-        autoComplete.threshold =1
+        autoComplete.threshold =2
     }
 }
 

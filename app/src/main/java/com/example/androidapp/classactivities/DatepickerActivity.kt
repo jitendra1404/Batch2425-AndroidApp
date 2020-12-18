@@ -1,10 +1,11 @@
-package com.example.androidapp
+package com.example.androidapp.classactivities
 
 import android.app.DatePickerDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import com.example.androidapp.R
 import java.util.*
 
 class DatepickerActivity : AppCompatActivity() {

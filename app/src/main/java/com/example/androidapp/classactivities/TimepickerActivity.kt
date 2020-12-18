@@ -1,13 +1,12 @@
-package com.example.androidapp
+package com.example.androidapp.classactivities
 
 import android.app.TimePickerDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
-import java.text.SimpleDateFormat
+import com.example.androidapp.R
 import java.util.*
-import kotlin.time.hours
 
 class TimepickerActivity : AppCompatActivity() {
     private lateinit var btnLoadTimePicker: Button
